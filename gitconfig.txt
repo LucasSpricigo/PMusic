@@ -1,0 +1,20 @@
+git config --global user.name LucasSpricigo
+git config --global user.email lucasspricigo21@gmail.com
+
+-- Criar um projeto React Native Expo
+npx create-expo-app@latest PMusic --template blank@57
+
+-- Restaurar o projeto (Toda vez que fizer um clone)
+cd PMusic
+npm i
+
+--executar o projeto
+npx expo start
+npx expo start --android
+
+-- instalando os pacotes
+cd       
+npx expo install react-dom react-native-web @expo/metro-runtime
+npx expo install expo-audio expo-linear-gradient expo-splash-screen expo-status-bar
+npx expo install react-native-safe-area-context @react-native-community/slider
+npx expo install @expo/vector-icons expo-font
